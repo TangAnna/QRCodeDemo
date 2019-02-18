@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QRCodeActivity">
+
+    <cn.bingoogolapple.qrcode.zxing.ZXingView
+        android:id="@+id/zxing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:qrcv_isAutoZoom="true"
+        app:qrcv_isOnlyDecodeScanBoxArea="true"
+        app:qrcv_isTipTextBelowRect="true"
+        app:qrcv_qrCodeTipText="将二维码/条形码放入框内，即可自动扫描"
+        app:qrcv_tipTextMargin="20dp"
+        app:qrcv_topOffset="100dp" />
+
+
+</RelativeLayout>
